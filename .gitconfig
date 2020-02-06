@@ -1,0 +1,18 @@
+[user]
+        name = 1n1t
+        email = tom@ohhhh.me
+[alias]
+        st = status
+        br = branch
+        last = log -1 HEAD
+        ch = checkout
+        hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+        rh = reset --hard
+	cl = clean -f -d
+	fa = fetch --all
+[filter "lfs"]
+	process = git-lfs filter-process --skip
+	smudge = git-lfs smudge --skip %f
+	clean = git-lfs clean %f
+[lfs "https://github.yandex-team.ru/"]
+	locksverify = false

@@ -1,0 +1,10 @@
+alias mp='make privs'
+alias mr='make react'
+alias mkr='../tools/deploy-configs restart'
+alias mkd='make deps'
+alias mrw='make react-watch'
+
+alias auth_reset="../tools/deploy-configs destroy && ../tools/deploy-configs build && make && make react && ../tools/deploy-configs start"
+alias slog="sudo /usr/sbin/tcpdump -pnn -A -s0 port 2600"
+alias git_start_over="git rh && git cl && gco master && gfa && gl"
+
