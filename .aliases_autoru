@@ -8,3 +8,4 @@ alias auth_reset="../tools/deploy-configs destroy && ../tools/deploy-configs bui
 alias slog="sudo /usr/sbin/tcpdump -pnn -A -s0 port 2600"
 alias git_start_over="git rh && git cl && gco master && gfa && gl"
 
+alias ssh_me='ssh 1n1t.dev.vertis.yandex.net -A'
