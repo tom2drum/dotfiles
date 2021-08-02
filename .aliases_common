@@ -5,4 +5,7 @@ alias scl="screen -list"
 alias scs="screen -S"
 alias scx="screen -x"
 alias lh="ls -lah"
+alias ls="ls -1"
 export GREP_COLOR="1;32"
+
+alias glfsp='git lfs push --all origin "$(git_current_branch)"'
