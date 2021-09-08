@@ -12,4 +12,4 @@ alias git_start_over="git rh && git cl && gco master && gfa && gl"
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 alias ssh_me='ssh 1n1t.dev.vertis.yandex.net -A'
 
-alias sync="~/sync_me.sh"
+alias sync="~/Ya/sync_me.sh"
