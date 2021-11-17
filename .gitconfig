@@ -16,3 +16,9 @@
 	clean = git-lfs clean %f
 [lfs "https://github.yandex-team.ru/"]
 	locksverify = false
+[i18n]
+	commitEncoding = utf8
+	logOutputEncoding = utf-8
+[core]
+	quotepath = false
+	pager = less --raw-control-chars
