@@ -1,8 +1,14 @@
+alias m='make'
 alias mp='make privs'
 alias mr='make react'
-alias mkr='../tools/deploy-configs restart'
-alias mkd='make deps'
+alias ml='../tools/deploy-configs logs-json2'
+alias md='make deps'
+alias ms='make stop'
+alias mrs='make restart'
 alias mrw='make react-watch'
+alias mcb='../tools/deploy-configs build'
+alias mcd='../tools/deploy-configs destroy'
+alias mcs='../tools/deploy-configs start'
 
 alias auth_reset="../tools/deploy-configs destroy && ../tools/deploy-configs build && make && make react && ../tools/deploy-configs start"
 alias slog="sudo /usr/sbin/tcpdump -pnn -A -s0 port 2600"
