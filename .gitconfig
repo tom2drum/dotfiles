@@ -1,24 +1,21 @@
 [user]
-        name = 1n1t
+        name = tom
         email = tom@ohhhh.me
+	signingkey = 231A4E12A6B50129
+[core]
+        editor = vim
 [alias]
         st = status
         br = branch
         last = log -1 HEAD
-        ch = checkout
         hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+        ch = checkout
         rh = reset --hard
-	cl = clean -f -d
-	fa = fetch --all
-[filter "lfs"]
-	process = git-lfs filter-process --skip
-	smudge = git-lfs smudge --skip %f
-	clean = git-lfs clean %f
-[lfs "https://github.yandex-team.ru/"]
-	locksverify = false
-[i18n]
-	commitEncoding = utf8
-	logOutputEncoding = utf-8
-[core]
-	quotepath = false
-	pager = less --raw-control-chars
+        cl = clean -f -d
+        fa = fetch --all
+        rom = pull --rebase origin main
+[filter]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
